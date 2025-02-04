@@ -1,0 +1,33 @@
+/* Contenedor del producto */
+.product-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    height: 300px; /* Ajusta según necesites */
+  }
+  
+  /* Tarjetas de los productos */
+  .product-card {
+    width: 16%; /* Tamaño para pantallas grandes (6 productos visibles) */
+    min-width: 180px;
+  }
+  
+  .product-card img {
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  /* Estilo responsivo */
+  @media (max-width: 991px) { /* Tablet */
+    .product-card {
+      width: 22%; /* 4 productos visibles */
+    }
+  }
+  
+  @media (max-width: 767px) { /* Móvil */
+    .product-card {
+      width: 90%; /* 1 producto visible */
+    }
+  }
+  
